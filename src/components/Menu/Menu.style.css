@@ -111,3 +111,24 @@
 .menu .conteudo-menu li.item-menu {
     border-bottom: 1px solid rgba(255, 255, 255, 0.132);
 }
+
+@media (max-width: 1060px) {
+    .site.aberto, 
+    .site.fechado,
+    .site {
+        margin: 0px;
+        width: 100%;
+        transition: all 0.5s;
+        z-index: 2;
+        position: relative;
+    }
+
+    .menu {
+        z-index: 4;
+        width: 250px;
+    }
+
+    .navbar .btn-menu{transition: all 0.5s;}
+    .site.aberto .navbar .btn-menu {margin-left: 250px;}
+    .site.aberto .navbar .user-ciclo {display: none;}
+}
